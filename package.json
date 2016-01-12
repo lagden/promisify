@@ -23,16 +23,14 @@
   "scripts": {
     "coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "pretest": "xo",
-    "test": "istanbul cover _mocha -- -R spec -t 6000",
-    "start": "watch xo"
+    "test": "istanbul cover _mocha -- -R spec -t 6000"
   },
   "devDependencies": {
-    "coveralls": "^2.11.4",
-    "istanbul": "^0.4.0",
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
     "mocha": "^2.3.3",
     "mocha-lcov-reporter": "^1.0.0",
-    "watch": "^0.16.0",
-    "xo": "^0.10.0"
+    "xo": "^0.12.1"
   },
   "engines": {
     "node": ">=4.0.0"
