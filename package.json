@@ -1,0 +1,47 @@
+{
+  "name": "lagden-promisify",
+  "version": "1.0.0",
+  "description": "Convert callback to promise",
+  "keywords": [
+    "promisify",
+    "promise",
+    "callback",
+    "convert"
+  ],
+  "bug": {
+    "url": "https://github.com/lagden/promisify/issues",
+    "email": "lagden@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Thiago Lagden",
+    "email": "lagden@gmail.com",
+    "url": "http://lagden.in"
+  },
+  "main": "index.js",
+  "repository": "lagden/promisify",
+  "scripts": {
+    "coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "pretest": "xo",
+    "test": "istanbul cover _mocha -- -R spec -t 6000",
+    "start": "watch xo"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3",
+    "mocha-lcov-reporter": "^1.0.0",
+    "watch": "^0.16.0",
+    "xo": "^0.10.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "xo": {
+    "envs": [
+      "es6",
+      "node"
+    ],
+    "esnext": true
+  }
+}
