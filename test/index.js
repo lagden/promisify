@@ -16,4 +16,12 @@ describe('promisify', () => {
 				done();
 			});
 	});
+
+	it('fail', done => {
+		readFile('./not-found.txt')
+			.catch(err => {
+				assert.equal(err.message, `ENOENT: no such file or directory, open './not-found.txt'`);
+				done();
+			});
+	});
 });
