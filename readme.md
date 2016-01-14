@@ -9,8 +9,16 @@
 
 ## Install
 
+Compatible with `Node.js` >= 5.0.0
+
 ```
 $ npm i lagden-promisify --save
+```
+
+Compatible with `Node.js` >= 4.0.0
+
+```
+$ npm i lagden-promisify@1.0.2 --save
 ```
 
 
@@ -21,11 +29,7 @@ const fs = require('fs');
 const promisify = require('lagden-promisify');
 
 const readFile = promisify(fs.readFile);
-
-readFile('./sample.txt')
-  .then(data => {
-    console.log(data)
-  });
+readFile('./sample.txt').then(data => console.log);
 ```
 
 
