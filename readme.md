@@ -9,16 +9,22 @@
 
 ## Install
 
+Compatible with **Node.js >= 6**
+
+```
+$ npm i -S lagden-promisify
+```
+
 Compatible with **Node.js >= 5.0.0**
 
 ```
-$ npm i lagden-promisify --save
+$ npm i -S lagden-promisify@2.0.0
 ```
 
-Compatible with **Node.js >= 4.0.0**
+Compatible with **Node.js >= 4**
 
 ```
-$ npm i lagden-promisify@1.0.2 --save
+$ npm i -S lagden-promisify@1.0.2
 ```
 
 

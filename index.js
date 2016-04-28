@@ -1,12 +1,7 @@
 'use strict';
 
 function promisify(m) {
-	// return function transform(...args) {
-	return function transform() {
-		const args = [];
-		for (const arg of arguments) {
-			args.push(arg);
-		}
+	return function transform(...args) {
 		return new Promise((resolve, reject) => {
 			function cb(err, data) {
 				if (err) {
