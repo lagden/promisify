@@ -1,18 +1,18 @@
-'use strict';
+'use strict'
 
 function promisify(m) {
 	return function transform(...args) {
 		return new Promise((resolve, reject) => {
 			function cb(err, data) {
 				if (err) {
-					reject(err);
+					reject(err)
 				} else {
-					resolve(data);
+					resolve(data)
 				}
 			}
-			m(...args.concat(cb));
-		});
-	};
+			m(...args.concat(cb))
+		})
+	}
 }
 
-module.exports = promisify;
+module.exports = promisify

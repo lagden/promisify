@@ -40,6 +40,7 @@
       "es6",
       "node"
     ],
-    "esnext": true
+    "esnext": true,
+    "semicolon": false
   }
 }
